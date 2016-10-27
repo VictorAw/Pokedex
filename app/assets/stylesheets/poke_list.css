@@ -5,7 +5,7 @@
 
 .poke-list ul {
   list-style: none;
-  width: 150px;
+  width: 200px;
 }
 
 .poke-list img {
@@ -15,9 +15,21 @@
   vertical-align: middle;
 }
 
+.poke-list-item {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.poke-list-number {
+  display: flex;
+  justify-content: flex-end;
+  width: 40px;
+  padding-right: 10px;
+}
+
 .poke-list li {
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
   align-content: center;
   align-items: center;
 
