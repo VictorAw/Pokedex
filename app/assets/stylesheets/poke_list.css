@@ -1,11 +1,12 @@
 .poke-list {
   display: inline-block;
   border-right: 1px solid white;
+  width: 15%;
 }
 
 .poke-list ul {
   list-style: none;
-  width: 150px;
+  width: 100%;
 }
 
 .poke-list img {
@@ -13,6 +14,13 @@
   height: 20px;
   padding-right: 10px;
   vertical-align: middle;
+}
+
+.poke-list-decoration {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  padding-left: 5%;
 }
 
 .poke-list li {

@@ -4,8 +4,10 @@ import { selectAllPokemon } from "../../reducers/selector";
 const pokemonThing = function(pokemon) {
   return (
     <li key={pokemon.id}>
-      <p>{pokemon.id}</p>
-      <img src={pokemon.image_url}/>
+      <section className="poke-list-decoration">
+        <p>{pokemon.id}</p>
+        <img src={pokemon.image_url}/>
+      </section>
       <p>{pokemon.name}</p>
     </li>
   );
