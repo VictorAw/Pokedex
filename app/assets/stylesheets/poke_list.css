@@ -1,0 +1,56 @@
+.poke-list {
+  display: inline-block;
+  border-right: 1px solid white;
+}
+
+.poke-list ul {
+  list-style: none;
+  width: 150px;
+}
+
+.poke-list img {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+
+.poke-list li {
+  display: flex;
+  justify-content: left;
+  align-content: center;
+  align-items: center;
+
+  margin: 0px, 0px;
+
+  border-top: 1px solid gray;
+  /*border-top: 1px solid gray;*/
+}
+
+.poke-list li:first-of-type {
+  /*border-top: 1px solid gray;*/
+}
+
+.poke-list li:last-of-type {
+  border-bottom: 2px solid gray;
+}
+
+.poke-list li:hover + li {
+  border-top: 0;
+}
+
+.poke-list li:hover {
+  border-bottom: 1px solid gray;
+  color: white;
+  border-color: white;
+}
+
+.poke-list p {
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.poke-list p:first-of-type {
+  padding-left: 10px;
+}
