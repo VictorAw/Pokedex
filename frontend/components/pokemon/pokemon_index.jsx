@@ -1,19 +1,6 @@
 import React from "react";
 import { selectAllPokemon } from "../../reducers/selector";
-
-const pokemonThing = function(pokemon) {
-  return (
-    <li key={pokemon.id}>
-      <section className="poke-list-number">
-        <p>{pokemon.id}</p>
-      </section>
-      <section className="poke-list-item">
-        <img src={pokemon.image_url}/>
-        <p>{pokemon.name}</p>
-      </section>
-    </li>
-  );
-};
+import PokemonIndexItem from "./pokemon_index_item";
 
 class PokemonIndex extends React.Component {
   constructor(props) {
@@ -26,8 +13,8 @@ class PokemonIndex extends React.Component {
         <p>We have John in our list</p>
         <ul>
           {
-            selectAllPokemon(this.props).map((pokemon) => (
-              pokemonThing(pokemon)
+            selectAllPokemon(this.props).map((p) => (
+              <PokemonIndexItem pokemon={p} key={p.id} />
             ))
           }
         </ul>
