@@ -15,6 +15,10 @@
   vertical-align: middle;
 }
 
+/* Chose to use two-section solution for list item alignment because
+ * it's easier to shift the whole list over instead of adding space
+ * between the number and the picture
+ */
 .poke-list-item {
   display: flex;
   justify-content: flex-start;
