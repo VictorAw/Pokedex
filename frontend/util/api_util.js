@@ -15,3 +15,13 @@ export const fetchPokemon = function(id, success, error) {
     error
   });
 };
+
+export const makePokemon = function(pokemon, success, error) {
+  $.ajax({
+    message: "POST",
+    url: `api/pokemon`,
+    data: pokemon,
+    success,
+    error
+  });
+};

@@ -1,0 +1,51 @@
+.poke-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 50px 50px;
+
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  flex: 1;
+
+  background-color: #00D5D5;
+  border: 30px solid white;
+}
+
+.poke-detail > img {
+  width: 500px;
+  height: 500px;
+}
+
+.poke-detail ul {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.poke-detail li {
+  list-style: none;
+  text-align: center;
+  font-size: 24px;
+  color: black;
+}
+
+.poke-detail li strong {
+  font-weight: 700;
+}
+
+.item-images {
+  padding-top: 10%;
+  float: left;
+}
+
+.item-images img {
+  width: 200px;
+  height: 200px;
+}
+
+.item-name {
+  margin-top: 50px;
+}
